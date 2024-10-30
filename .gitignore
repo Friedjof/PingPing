@@ -1,0 +1,7 @@
+
+/mosquitto/data/
+/mosquitto/log/
+
+/mosquitto/config/password.txt
+
+.env
