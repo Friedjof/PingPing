@@ -3,9 +3,9 @@ Description=PingPing Daemon for Measuring Latency
 After=network.target
 
 [Service]
-EnvironmentFile=/opt/pingping/.env
-ExecStart=/opt/pingping/.venv/bin/python /opt/pingping/pingping.py
-WorkingDirectory=/opt/pingping
+EnvironmentFile=/opt/PingPing/.env
+ExecStart=/opt/PingPing/.venv/bin/python /opt/PingPing/pingping.py
+WorkingDirectory=/opt/PingPing
 Restart=on-failure
 
 [Install]

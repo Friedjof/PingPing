@@ -35,7 +35,16 @@ Navigate to the project directory and create a virtual environment:
 
 ```shell
 cd /opt/PingPing
-python3 -m venv .venv
+```
+
+If you don't have the `python3-venv` package installed, you can install it with the following command:
+```shell
+sudo apt install python3.11-venv
+```
+
+Create the virtual environment:
+```shell
+sudo python3 -m venv .venv
 ```
 
 Activate the virtual environment:
