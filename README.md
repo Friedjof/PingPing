@@ -11,7 +11,7 @@ To install PingPing, you need to have Python 3.6 or higher installed on your sys
 Clone the repository to a temporary location:
 
 ```shell
-git clone https://github.com/Friedjof/pingping.git
+git clone https://github.com/Friedjof/PingPing.git
 ```
 
 ### 2. Move the Project to `/opt`
@@ -19,14 +19,14 @@ git clone https://github.com/Friedjof/pingping.git
 Move the project to `/opt`:
 
 ```shell
-sudo mv pingping /opt/pingping
+sudo mv PingPing /opt/PingPing
 ```
 
-Set permissions for `/opt/pingping`:
+Set permissions for `/opt/PingPing`:
 
 ```shell
-sudo chown -R root:root /opt/pingping
-sudo chmod -R 755 /opt/pingping
+sudo chown -R root:root /opt/PingPing
+sudo chmod -R 755 /opt/PingPing
 ```
 
 ### 3. Create a Virtual Environment and Install Requirements
@@ -34,7 +34,7 @@ sudo chmod -R 755 /opt/pingping
 Navigate to the project directory and create a virtual environment:
 
 ```shell
-cd /opt/pingping
+cd /opt/PingPing
 python3 -m venv .venv
 ```
 
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 ### 4. Create the `.env` File
 
-In the `/opt/pingping` directory, create a `.env` file with the following content:
+In the `/opt/PingPing` directory, create a `.env` file with the following content:
 
 ```shell
 MQTT_BROKER_HOST=your-mqtt-broker-host # e.g. mqtt.eclipse.org
@@ -69,7 +69,7 @@ PING_TARGETS=your-ping-targets         # comma-separated list of targets (e.g. '
 1. In the root directory of the project, you will find the `pingping.service` file. Copy it to the systemd directory:
 
    ```shell
-   sudo cp /opt/pingping/pingping.service /etc/systemd/system/pingping.service
+   sudo cp /opt/PingPing/pingping.service /etc/systemd/system/pingping.service
    ```
 
 2. Reload the systemd daemon and enable the service to start on boot:
