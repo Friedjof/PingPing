@@ -89,6 +89,14 @@ PING_TARGETS=your-ping-targets         # comma-separated list of targets (e.g. '
    sudo systemctl start pingping
    ```
 
+Now the service is running in the background and sends the results to the MQTT server at regular intervals.
+
+You can check the status of the service with the following command:
+
+```shell
+sudo systemctl status pingping
+```
+
 ### 6. MQTT Topics
 
 The results are sent to the following MQTT topics:
